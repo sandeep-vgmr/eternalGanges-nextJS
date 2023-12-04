@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "avernir";
+  src: url("../fonts/avenir.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "avernir-st-roman";
+  src: url("../fonts/Avenir-LT-55-Roman-Bold.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "El Messiri";
+  src: url("../fonts/ElMessiri-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ElsieSwashCaps";
+  src: url("../fonts/ElsieSwashCaps-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Damia";
+  src: url("../fonts/Damia-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "avernir";
+  src: url("../fonts/avenir.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "avernir-st-roman";
+  src: url("../fonts/Avenir-LT-55-Roman-Bold.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "El Messiri";
+  src: url("../fonts/ElMessiri-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ElsieSwashCaps";
+  src: url("../fonts/ElsieSwashCaps-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Damia";
+  src: url("../fonts/Damia-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.apply-coupon {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  width: 100vw;
+  animation: openright 1s ease forwards;
+}
+@keyframes openright {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+.apply-coupon.displayblk {
+  display: block !important;
+}
+.apply-coupon.displaynone {
+  display: none !important;
+}
+.apply-coupon .overlay {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+}
+.apply-coupon .wrapper .coupon-cart {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: var(--ColorWhite);
+  height: 100%;
+  width: 100vw;
+  max-width: 550px;
+  animation: couponcart 1s ease-in-out forwards;
+}
+@keyframes couponcart {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+.apply-coupon .wrapper .coupon-cart h5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px;
+  font-family: "El Messiri";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 50px;
+  color: var(--ColorWhite);
+  background: var(--Maincolor);
+  margin-bottom: 0;
+}
+.apply-coupon .wrapper .coupon-cart h5 img {
+  cursor: pointer;
+}
+.apply-coupon .wrapper .coupon-cart .main-section {
+  padding: 20px;
+  height: 750px;
+  overflow-y: overlay;
+  margin-right: 15px;
+  padding-right: 30px;
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon {
+  position: relative;
+  border: none;
+  background: var(--ColorWhite);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  padding: 15px;
+  margin-bottom: 30px;
+  height: 125px;
+  cursor: pointer;
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon.activeColor {
+  background: var(--GlobalColor);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon:hover {
+  background: var(--GlobalColor);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.05);
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon .checkbox {
+  width: 18px;
+  height: 18px;
+  background: var(--ColorWhite);
+  margin-right: 15px;
+  margin-top: 10px;
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon .checkbox .tick-checkbox {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--LightGrey);
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon .checkbox .tick-checkbox.addcolor {
+  background: var(--Maincolor);
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon .coupon-content h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ColorBlack);
+  background: var(--ColorWhite);
+  border: 1px dashed var(--LightGrey);
+  width: 99px;
+  height: 40px;
+  margin-bottom: 15px;
+  padding-top: 0;
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon .coupon-content p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: var(--ColorBlack);
+  width: 201px;
+  height: 40px;
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon .discount-count {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+.apply-coupon .wrapper .coupon-cart .main-section .select-coupon .discount-count span {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: var(--ColorBlack);
+}
+.apply-coupon .wrapper .coupon-cart .main-section::-webkit-scrollbar-track {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+.apply-coupon .wrapper .coupon-cart .main-section::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+.apply-coupon .wrapper .coupon-cart .main-section::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--Maincolor);
+}
+.apply-coupon .wrapper .coupon-cart .main-section::before {
+  content: "";
+  width: 3px;
+  height: 712px;
+  position: absolute;
+  right: 18px;
+  background: var(--BorderColor);
+}
+.apply-coupon .wrapper .coupon-cart .max-saving-info {
+  position: absolute;
+  bottom: 0;
+  background: var(--ColorWhite);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  left: 0;
+  padding: 19px 30px;
+}
+.apply-coupon .wrapper .coupon-cart .max-saving-info ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.apply-coupon .wrapper .coupon-cart .max-saving-info ul li p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--ColorBlack);
+}
+.apply-coupon .wrapper .coupon-cart .max-saving-info ul li span {
+  font-family: "avernir";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: var(--ColorBlack);
+}
+.apply-coupon .wrapper .coupon-cart .max-saving-info ul li button {
+  background: var(--Maincolor);
+  border-radius: 5px;
+  padding: 12px 30px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ColorWhite);
+  border: none;
+}/*# sourceMappingURL=applycoupon.css.map */

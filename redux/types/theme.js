@@ -1,0 +1,3 @@
+export const FETCH_THEME = "FETCH_THEME"
+export const RESPONSE_THEME = "RESPONSE_THEME"
+export const FAILED_THEME = "FAILED_THEME"

@@ -1,0 +1,273 @@
+@font-face {
+  font-family: "avernir";
+  src: url("../fonts/avenir.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "avernir-st-roman";
+  src: url("../fonts/Avenir-LT-55-Roman-Bold.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "El Messiri";
+  src: url("../fonts/ElMessiri-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ElsieSwashCaps";
+  src: url("../fonts/ElsieSwashCaps-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Damia";
+  src: url("../fonts/Damia-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "avernir";
+  src: url("../fonts/avenir.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "avernir-st-roman";
+  src: url("../fonts/Avenir-LT-55-Roman-Bold.woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "El Messiri";
+  src: url("../fonts/ElMessiri-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ElsieSwashCaps";
+  src: url("../fonts/ElsieSwashCaps-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Damia";
+  src: url("../fonts/Damia-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.modal-wrapper .modal-open {
+  padding: 0 !important;
+  font-family: "Dosis";
+  color: var(--ColorBlack);
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content {
+  padding: 15px 32px 15px 32px;
+  border-radius: 0;
+  background: var(--ColorWhite);
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-header {
+  padding: 0;
+  border-bottom: none;
+  position: relative;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-header .btn-close {
+  position: relative;
+  top: -15px;
+  right: -10px;
+  background: url("../../../assets/images/icons/down-arr.svg") no-repeat;
+  background-size: 100% 100%;
+  width: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-header .btn-close:hover {
+  opacity: 0.5;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-header .modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-header .modal-title h5 {
+  font-family: "El Messiri";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 50px;
+  color: var(--Maincolor);
+  margin-bottom: 0;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-header .modal-title img {
+  cursor: pointer;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body .fields-imp {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+  text-align: right;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  height: 71px;
+  margin-bottom: 10px;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .form-group .mobile {
+  display: flex;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .form-group .mobile select {
+  margin-right: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../../../assets/images/icons/down-arr.svg") no-repeat;
+  background-position: right 2px top 17px;
+  width: 55px;
+  background-size: 10px;
+  padding: 7px;
+  border: 0.5px solid var(--BorderColor);
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .form-group label {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: var(--ColorBlack);
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .form-group input {
+  width: 100%;
+  border: 0.5px solid var(--BorderColor);
+  border-radius: 5px;
+  height: 40px;
+  outline: none;
+  padding: 10px;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .form-group.pswd {
+  position: relative;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .form-group.pswd img {
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  cursor: pointer;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .form-group select {
+  padding: 0 10px;
+  border: 0.5px solid var(--BorderColor);
+  border-radius: 5px;
+  height: 40px;
+  background: url("../../../assets/images/icons/down-arr.svg") no-repeat;
+  background-position: right 6px top 17px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-size: 12px;
+  outline: none;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .details-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form h6 {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: var(--ColorBlack);
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .shop-info .form-group {
+  width: 100%;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form button.submitBtn {
+  background: var(--Maincolor);
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ColorWhite);
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .term-policy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  color: var(--ColorBlack);
+  padding-top: 10px;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .term-policy a {
+  color: var(--Maincolor);
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .login-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+  color: var(--ColorBlack);
+  text-align: center;
+  padding-top: 30px;
+}
+.modal-wrapper .modal-open .modal .modal-dialog .modal-content .modal-body form .login-link a {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--Maincolor);
+  text-transform: uppercase;
+}/*# sourceMappingURL=modalcustom.css.map */

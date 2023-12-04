@@ -1,0 +1,211 @@
+@import '../../../assets/scss/mixins';
+@import '../../../assets/scss/_variables';
+
+// create account modal popup css 
+.modal-wrapper{
+    .modal-open {
+        padding: 0 !important;
+        font-family: $BaseFontFamily;
+        color: var(--ColorBlack);
+    
+        .modal {
+            .modal-dialog {
+                .modal-content {
+                    padding: 15px 32px 15px 32px;
+                    border-radius: 0;
+                    background: var(--ColorWhite);
+    
+                    .modal-header {
+                        padding: 0;
+                        border-bottom: none;
+                        position: relative;
+                        height: 50px;
+                        align-items: center;
+                        justify-content: center;
+    
+                        .btn-close {
+                            position: relative;
+                            top: -15px;
+                            right: -10px;
+                            background: url('../../../assets/images/icons/down-arr.svg') no-repeat;
+                            background-size: 100% 100%;
+                            width: 0px;
+                            object-fit: cover;
+                            opacity: 1;
+    
+                            &:hover {
+                                opacity: 0.5;
+                            }
+                        }
+    
+                        .modal-title {
+                            width: 100%;
+                            @include space_between;
+    
+                            h5 {
+                                font-family: $Elmessiri;
+                                font-weight: 400;
+                                font-size: 32px;
+                                line-height: 50px;
+                                color: var(--Maincolor);
+                                margin-bottom: 0;
+                            }
+    
+                            img{
+                                cursor: pointer;
+                            }
+    
+                        }
+                    }
+    
+                    .modal-body {
+                        padding: 0;
+    
+                        .fields-imp {
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 25px;
+                            letter-spacing: 0.05em;
+                            opacity: 0.5;
+                            text-align: right;
+                        }
+    
+                        form {
+                            .form-group {
+                                display: flex;
+                                flex-direction: column;
+                                width: 210px;
+                                height: 71px;
+                                margin-bottom: 10px;
+    
+                                .mobile {
+                                    display: flex;
+    
+                                    select {
+                                        margin-right: 5px;
+                                        appearance: none;
+                                        background: url('../../../assets/images/icons/down-arr.svg') no-repeat;
+                                        background-position: right 2px top 17px;
+                                        width: 55px;
+                                        background-size: 10px;
+                                        padding: 7px;
+                                        border: 0.5px solid var(--BorderColor);
+                                    }
+                                }
+    
+                                label {
+                                    font-weight: 400;
+                                    font-size: 1rem;
+                                    line-height: 26px;
+                                    letter-spacing: 0.05em;
+                                    color: var(--ColorBlack);
+                                }
+    
+                                input {
+                                    width: 100%;
+                                    border: 0.5px solid var(--BorderColor);
+                                    border-radius: 5px;
+                                    height: 40px;
+                                    outline: none;
+                                    padding: 10px;
+                                }
+    
+                                &.pswd {
+                                    position: relative;
+    
+                                    img {
+                                        position: absolute;
+                                        right: 10px;
+                                        top: 40px;
+                                        cursor: pointer;
+                                    }
+    
+                                }
+    
+                                select {
+                                    padding: 0 10px;
+                                    border: 0.5px solid var(--BorderColor);
+                                    border-radius: 5px;
+                                    height: 40px;
+                                    background: url('../../../assets/images/icons/down-arr.svg') no-repeat;
+                                    background-position: right 6px top 17px;
+                                    appearance: none;
+                                    background-size: 12px;
+                                    outline: none;
+                                }
+                            }
+    
+                            .details-form {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                margin-bottom: 40px;
+                            }
+    
+                            h6 {
+                                font-weight: 600;
+                                font-size: 1rem;
+                                line-height: 20px;
+                                letter-spacing: 0.05em;
+                                color: var(--ColorBlack);
+                            }
+    
+                            .shop-info {
+                                .form-group {
+                                    width: 100%;
+                                }
+                            }
+    
+                            button.submitBtn {
+                                background: var(--Maincolor);
+                                border-radius: 5px;
+                                width: 100%;
+                                border: none;
+                                padding: 10px;
+                                font-weight: 700;
+                                font-size: 1rem;
+                                text-align: center;
+                                letter-spacing: 0.1em;
+                                text-transform: uppercase;
+                                color: var(--ColorWhite);
+                            }
+    
+                            .term-policy {
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 10px;
+                                letter-spacing: 0.03em;
+                                color: var(--ColorBlack);
+                                padding-top: 10px;
+    
+                                a {
+                                    color: var(--Maincolor);
+                                }
+                            }
+    
+                            .login-link {
+    
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 26px;
+                                letter-spacing: 0.05em;
+                                color: var(--ColorBlack);
+                                text-align: center;
+                                padding-top: 30px;
+    
+                                a {
+                                    font-weight: 700;
+                                    font-size: 1rem;
+                                    color: var(--Maincolor);
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
